@@ -12,12 +12,12 @@ class Frame:
         self.args['led_chain'] = kwargs.get('led_chain', 1)
         self.args['led_parallel'] = kwargs.get('led_parallel', 1)
         self.args['led_pwm_bits'] = kwargs.get('led_pwm_bits', 11)
-        self.args['led_brightness'] = kwargs.get('led_brightness', 33)
+        self.args['led_brightness'] = kwargs.get('led_brightness', 100)
         self.args['led_gpio_mapping'] = kwargs.get('led_gpio_mapping', 'adafruit-hat')
         self.args['led_scan_mode'] = kwargs.get('led_scan_mode', 1)
         self.args['led_pwm_lsb_nanoseconds'] = kwargs.get('led_pwm_lsb_nanoseconds', 130)
         self.args['led_show_refresh'] = kwargs.get('led_show_refresh', False)
-        self.args['led_slowdown_gpio'] = kwargs.get('led_slowdown_gpio', 0)
+        self.args['led_slowdown_gpio'] = kwargs.get('led_slowdown_gpio', 1)
         self.args['led_no_hardware_pulse'] = kwargs.get('led_no_hardware_pulse', False)  # double check
         self.args['led_rgb_sequence'] = kwargs.get('led_rgb_sequence', 'RGB')
         self.args['led_pixel_mapper'] = kwargs.get('led_pixel_mapper', '')
@@ -31,7 +31,7 @@ class Frame:
     def run(self):
         print('Running')
 
-    def initMatrix(self):
+    def process(self):
         options = RGBMatrixOptions()
 
         if self.args['led_gpio_mapping'] is not None:
