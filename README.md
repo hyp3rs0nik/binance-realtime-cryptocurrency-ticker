@@ -49,4 +49,6 @@ more info about `pm2` here [pm2](https://www.npmjs.com/package/pm2)
 
 ### How it look like 
 
-https://photos.app.goo.gl/KcyuNqKQi8aMfj1s8
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=9zCzBLmlcoM
+" target="_blank"><img src="http://img.youtube.com/vi/9zCzBLmlcoM/0.jpg" 
+alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
