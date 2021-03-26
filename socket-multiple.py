@@ -12,7 +12,6 @@ from frame import Frame
 from setinterval import SetInterval
 from rgbmatrix import graphics
 from millify import millify
-from random import randrange
 
 class BinanceSocket(Frame):
 
